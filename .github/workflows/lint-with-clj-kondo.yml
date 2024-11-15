@@ -1,9 +1,6 @@
 name: "Lint with clj-kondo"
 on:
-  pull_request:
-  push:
-    branches:
-      - live
+  workflow_dispatch:
 
 jobs:
   lint:
