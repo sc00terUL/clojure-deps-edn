@@ -17,6 +17,7 @@ jobs:
         uses: action/checkout@v4
         with: 
           repository: sc00terUL/clj-holmes
+          token: ${{ secrets.GH_PAT }}
           path: main
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
